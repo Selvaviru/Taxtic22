@@ -96,35 +96,67 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
+     import React, { useState, useEffect } from 'react';
+import { Phone, Mail, MapPin, FileText, Building, Shield, Calculator, Users, CheckCircle, ArrowRight, Star, TrendingUp, Clock, Award, Zap, Target, Heart, Menu } from 'lucide-react';
+
+function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Disable dark mode by always setting light mode
+    document.documentElement.classList.remove('dark');
+  }, []);
+
+  // Optional toggle handler kept for future use
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    document.documentElement.classList.toggle('dark', !darkMode);
+  };
+
+  return (
+    <div className="min-h-screen bg-white text-gray-900">
       {/* Header */}
       <header className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50 backdrop-blur-sm bg-white/95">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-black to-gray-800 rounded-lg blur-sm opacity-30"></div>
-                <h1 className="relative text-4xl font-black bg-gradient-to-r from-gray-900 via-black to-gray-800 bg-clip-text text-transparent tracking-tight px-4 py-2">
-                  TAXTIC
-                </h1>
-              </div>
-            </div>
-            <nav className="hidden md:flex space-x-8">
-              <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Services</a>
-              <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">About</a>
-              <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</a>
-            </nav>
-            <div className="flex items-center space-x-4">
-              <a href="tel:9789485470" className="hidden sm:flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors">
-                <Phone className="w-4 h-4" />
-                <span className="text-sm font-semibold">9789485470</span>
-              </a>
-              <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2.5 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-                Get Started
-              </button>
-            </div>
-          </div>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between items-center h-16">
+      {/* Logo */}
+      <div className="flex items-center">
+        <div className="relative">
+          
+          <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight" >
+  <a href="#" className="hover:text-blue-600 transition-colors">TAXTIC</a>
+  <span className="block text-xs text-gray-500 font-serif italic">Your trusted Tax Buddy</span>
+</h1>
         </div>
-      </header>
+      </div>
+
+      {/* Navigation */}
+      <nav className="hidden md:flex space-x-8">
+        <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Services</a>
+        <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">About</a>
+        <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</a>
+      </nav>
+
+      {/* Contact & CTA */}
+      <div className="flex items-center space-x-4">
+        <a href="tel:9789485470" className="hidden sm:flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors">
+          <Phone className="w-4 h-4" />
+          <span className="text-sm font-semibold">9789485470</span>
+        </a>
+        <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2.5 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+          Get Started
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+      {/* Rest of the content remains unchanged */}
+    </div>
+  );
+}
+
+export default App;
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-20 overflow-hidden">
