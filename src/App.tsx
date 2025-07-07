@@ -101,9 +101,12 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="text-4xl font-black bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 bg-clip-text text-transparent tracking-tight">
-                TAXTIC
-              </h1>
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-black to-gray-800 rounded-lg blur-sm opacity-30"></div>
+                <h1 className="relative text-4xl font-black bg-gradient-to-r from-gray-900 via-black to-gray-800 bg-clip-text text-transparent tracking-tight px-4 py-2">
+                  TAXTIC
+                </h1>
+              </div>
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Services</a>
@@ -317,7 +320,10 @@ function App() {
               </div>
               
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-                Experience the <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-700">TAXTIC</span> Difference
+                Experience the <span className="relative">
+                  <span className="absolute inset-0 bg-gradient-to-r from-gray-900 via-black to-gray-800 rounded blur-sm opacity-20"></span>
+                  <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-black to-gray-800 font-black">TAXTIC</span>
+                </span> Difference
               </h2>
               
               <p className="text-xl text-gray-600 mb-8">
@@ -506,9 +512,12 @@ function App() {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <div className="mb-4">
-                <h3 className="text-4xl font-black bg-gradient-to-r from-blue-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent tracking-tight">
-                  TAXTIC
-                </h3>
+                <div className="relative inline-block">
+                  <div className="absolute inset-0 bg-gradient-to-r from-gray-600 via-gray-500 to-gray-700 rounded-lg blur-sm opacity-40"></div>
+                  <h3 className="relative text-4xl font-black bg-gradient-to-r from-gray-300 via-white to-gray-400 bg-clip-text text-transparent tracking-tight px-2">
+                    TAXTIC
+                  </h3>
+                </div>
                 <p className="text-sm text-gray-400 font-medium mt-1">Tax & Compliance Experts</p>
               </div>
               <p className="text-gray-400 mb-6 leading-relaxed">
@@ -547,7 +556,10 @@ function App() {
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center">
             <p className="text-gray-400">
-              © 2024 <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">TAXTIC</span>. All rights reserved. | Professional Tax & Compliance Services | Made with ❤️ in Madurai
+              © 2024 <span className="relative">
+                <span className="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-500 rounded blur-sm opacity-30"></span>
+                <span className="relative font-black text-transparent bg-clip-text bg-gradient-to-r from-gray-300 to-white">TAXTIC</span>
+              </span>. All rights reserved. | Professional Tax & Compliance Services | Made with ❤️ in Madurai
             </p>
           </div>
         </div>
