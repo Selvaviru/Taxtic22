@@ -151,7 +151,9 @@ function App() {
   </div>
 </header>
 
-      {/* Rest of the content remains unchanged */}
+ <main>
+  {/* More content will go here */}
+</main>
     </div>
   );
 }
