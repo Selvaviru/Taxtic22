@@ -149,7 +149,7 @@ function App() {
                 <span className="text-sm font-semibold">9789485470</span>
               </a>
               <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2.5 rounded-xl hover
-
+                
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-20 overflow-hidden">
         {/* Background Decorations */}
