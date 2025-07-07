@@ -95,7 +95,24 @@ function App() {
   ];
 
   return (
-return (
+    function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    document.documentElement.classList.remove('dark');
+  }, []);
+
+  return (
+    <div className="min-h-screen bg-white text-gray-900">
+      {/* Header */}
+      <header>...</header>
+
+      <main className="text-center text-gray-500 py-20">
+        {/* Page content goes here */}
+      </main>
+    </div>
+  );
+}
   <div className="min-h-screen bg-white text-gray-900">
     {/* Header */}
     <header>...</header>
