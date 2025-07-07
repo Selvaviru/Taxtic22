@@ -157,7 +157,6 @@ function App() {
     </div>
   );
 }
-
 export default App;
 
       {/* Hero Section */}
