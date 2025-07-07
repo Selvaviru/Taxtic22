@@ -94,19 +94,8 @@ function App() {
     { number: "24/7", label: "Support", icon: <Clock className="w-6 h-6" /> }
   ];
 
-  return (
-    <div className="min-h-screen bg-white">
-     import React, { useState, useEffect } from 'react';
-import { Phone, Mail, MapPin, FileText, Building, Shield, Calculator, Users, CheckCircle, ArrowRight, Star, TrendingUp, Clock, Award, Zap, Target, Heart, Menu } from 'lucide-react';
-
-function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    // Disable dark mode by always setting light mode
-    document.documentElement.classList.remove('dark');
-  }, []);
-
+ 
+ 
   // Optional toggle handler kept for future use
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
