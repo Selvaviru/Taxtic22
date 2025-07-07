@@ -94,8 +94,21 @@ function App() {
     { number: "24/7", label: "Support", icon: <Clock className="w-6 h-6" /> }
   ];
 
- 
- 
+  return (
+return (
+  <div className="min-h-screen bg-white text-gray-900">
+    {/* Header */}
+    <header>...</header>
+
+    <main className="text-center text-gray-500 py-20">
+      {/* Page content goes here */}
+    </main>
+  </div>
+);
+    // Disable dark mode by always setting light mode
+    document.documentElement.classList.remove('dark');
+  }, []);
+
   // Optional toggle handler kept for future use
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
